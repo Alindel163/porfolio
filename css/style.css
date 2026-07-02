@@ -1,0 +1,469 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: #0a0a1a;
+    color: #e0e0e0;
+    min-height: 100vh;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* Header с фоном */
+header {
+    background: linear-gradient(135deg, #0a0a2a, #0a1a3a);
+    border-bottom: 1px solid rgba(100, 150, 200, 0.2);
+    padding: 32px 0 24px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Слайд-шоу только в header */
+.header-slideshow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.header-slideshow img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+}
+
+.header-slideshow img.active {
+    opacity: 0.15;
+}
+
+.header-container {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    justify-content: center;
+}
+
+.header-photo {
+    flex-shrink: 0;
+}
+
+.header-photo img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #3388cc;
+    box-shadow: 0 0 20px rgba(51, 136, 204, 0.3);
+}
+
+.header-text {
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #ffffff, #64b5f6);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    color: #bbccff;
+    margin-top: 8px;
+}
+
+/* Filter navigation */
+.filter-nav {
+    background: rgba(10, 20, 40, 0.9);
+    border-bottom: 1px solid rgba(100, 150, 200, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    padding: 16px 0;
+}
+
+.filter-nav .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+}
+
+.filter-btn {
+    padding: 8px 20px;
+    border-radius: 40px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+    border: none;
+    font-family: inherit;
+}
+
+.filter-btn.primary-group {
+    background: rgba(34, 102, 170, 0.3);
+    border: 1px solid #3388cc;
+    color: #bbccff;
+    font-weight: 600;
+}
+
+.filter-btn.primary-group:hover {
+    background: #2266aa;
+    color: white;
+}
+
+.filter-btn.primary-group.active {
+    background: #2266aa;
+    color: white;
+}
+
+.filter-divider {
+    width: 1px;
+    height: 30px;
+    background: linear-gradient(to bottom, transparent, #4488cc, transparent);
+    margin: 0 8px;
+}
+
+.filter-btn.secondary-group {
+    background: transparent;
+    border: 1px solid rgba(100, 150, 200, 0.3);
+    color: #bbccff;
+}
+
+.filter-btn.secondary-group:hover {
+    background: rgba(100, 150, 200, 0.15);
+    border-color: #4488cc;
+    color: white;
+}
+
+.filter-btn.secondary-group.active {
+    background: #2266aa;
+    border-color: #4488cc;
+    color: white;
+}
+
+/* Projects grid */
+.projects-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px 0 80px;
+}
+
+/* Card */
+.project-card {
+    background: rgba(20, 30, 50, 0.8);
+    backdrop-filter: blur(4px);
+    border-radius: 20px;
+    border: 1px solid rgba(100, 150, 200, 0.2);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+    padding: 20px;
+    transition: transform 0.2s, border-color 0.2s;
+}
+
+.project-card:hover {
+    transform: translateY(-2px);
+    border-color: rgba(100, 150, 200, 0.5);
+}
+
+/* Image - right side */
+.card-preview {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 16px;
+    flex-shrink: 0;
+    order: 2;
+}
+
+/* Content - left side */
+.card-content {
+    flex: 1;
+    order: 1;
+}
+
+/* Title + tag in one line */
+.card-title {
+    display: inline;
+    margin-right: 12px;
+    font-size: 1.35rem;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.card-tags {
+    display: inline-block;
+}
+
+.tag {
+    font-size: 0.7rem;
+    padding: 4px 10px;
+    background: rgba(50, 80, 120, 0.5);
+    border-radius: 20px;
+    color: #88bbff;
+}
+
+.card-description {
+    margin-top: 12px;
+    font-size: 0.9rem;
+    color: #c0d0f0;
+    line-height: 1.4;
+}
+
+/* Button */
+.btn {
+    padding: 8px 20px;
+    border-radius: 30px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+    font-family: inherit;
+    margin-top: 16px;
+}
+
+.btn-primary {
+    background: #2266aa;
+    color: white;
+}
+
+.btn-primary:hover {
+    background: #3388cc;
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: rgba(10, 18, 34, 0.95);
+    backdrop-filter: blur(8px);
+    border-radius: 24px;
+    max-width: 90vw;
+    max-height: 90vh;
+    width: 90vw;
+    position: relative;
+    border: 1px solid rgba(100, 150, 200, 0.3);
+    overflow: visible;  /* ← поменяйте с 'auto' на 'visible' */
+    padding: 24px 80px;  /* ← добавьте отступы для стрелок */
+}
+
+.slide-content video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    max-width: 100%;
+    max-height: 90vh;
+    width: auto;
+    height: auto;
+}
+
+.close-modal {
+    position: absolute;
+    top: 16px;
+    right: 24px;
+    font-size: 32px;
+    cursor: pointer;
+    color: #aaa;
+    z-index: 10;
+}
+
+.close-modal:hover {
+    color: white;
+}
+
+#modal-body {
+    padding: 6px 12px 12px 12px;  /* верх, право, низ, лево */
+    /* или просто: */
+    padding-top: 0px;
+}
+
+#modal-3d-canvas {
+    width: 100%;
+    height: 400px;
+    background: #0a1020;
+    border-radius: 12px;
+}
+
+.game-frame {
+
+    height: 100%;
+    min-height: 500px;
+    border: none;
+    border-radius: 12px;
+}
+
+.loading {
+    text-align: center;
+    padding: 60px;
+    color: #bbccff;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 16px;
+    }
+
+    .header-container {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .header-photo img {
+        width: 80px;
+        height: 80px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .project-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .card-preview {
+        width: 100%;
+        height: 200px;
+        order: 1;
+    }
+
+    .card-content {
+        order: 2;
+    }
+
+    .card-tags {
+        display: inline-block;
+    }
+
+    .filter-btn {
+        padding: 6px 14px;
+        font-size: 0.8rem;
+    }
+
+    .filter-divider {
+        display: none;
+    }
+
+    #modal-3d-canvas {
+        height: 300px;
+    }
+
+    .game-frame {
+        height: 350px;
+    }
+}
+
+.slide-title-info {
+    text-align: center;
+}
+
+.slide-title {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #88bbff;
+}
+
+.slide-desc {
+    display: block;
+    font-size: 0.8rem;
+    color: #6688aa;
+    margin-top: 4px;
+}
+
+
+.nav-prev, .nav-next {
+    background: rgba(34, 102, 170, 0.8);
+    border: 2px solid #4488cc;
+    color: white;
+    font-size: 36px;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.nav-prev {
+    left: -64px;  /* ← выносим наружу */
+}
+
+.nav-next {
+    right: -64px;  /* ← выносим наружу */
+}
+
+.nav-prev:hover:not(:disabled), .nav-next:hover:not(:disabled) {
+    background: #2266aa;
+    transform: translateY(-50%) scale(1.1);
+}
+
+.nav-prev:disabled, .nav-next:disabled {
+    opacity: 0.2;
+    cursor: not-allowed;
+}
+
+/* Мобильные */
+@media (max-width: 768px) {
+    .modal-content {
+        padding: 16px 40px;
+        max-width: 95vw;
+    }
+
+    .nav-prev, .nav-next {
+        font-size: 28px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .nav-prev {
+        left: -16px;
+    }
+
+    .nav-next {
+        right: -16px;
+    }
+}

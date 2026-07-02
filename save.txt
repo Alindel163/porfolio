@@ -1,0 +1,51 @@
+{
+    "projects": [
+        {
+            "id": "robot_1",
+            "title": "Robotic Arm",
+            "description": "6-DOF robotic arm",
+            "category": "robots",
+            "previewImage": "assets/images/robots/arm-preview.jpg",
+            "content": [
+                { "type": "3d", "title": "Full Assembly", "path": "assets/models-3d/characters/cube.glb" },
+                { "type": "video", "title": "Robot in Action", "path": "assets/videos/robots/demo.mp4" },
+                { "type": "image", "title": "Photo 3", "path": "assets/images/robots/arm-preview.jpg" },
+                { "type": "webgl", "title": "Play Game", "path": "assets/webgl-games/game1/index.html" },
+                {
+                    "type": "text-with-downloads",
+                    "title": "Description & Files",
+                    "textFile": "assets/texts/robotic-arm-description.txt",
+                    "downloads": [
+                        {
+                            "name": "STL Files",
+                            "path": "assets/downloads/arm-stl.zip",
+                            "size": "45 MB"
+                        },
+                        {
+                            "name": "Arduino Code",
+                            "path": "assets/downloads/arduino-code.zip",
+                            "size": "2 MB"
+                        },
+                        {
+                            "name": "Assembly Guide PDF",
+                            "path": "assets/downloads/assembly-guide.pdf",
+                            "size": "3.5 MB"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "robot_2",
+            "title": "Line Follower",
+            "description": "Autonomous line follower robot",
+            "category": "robots",
+            "previewImage": "assets/images/robots/line-follower.jpg",
+            "content": [
+                { "type": "3d", "title": "Full Assembly", "path": "assets/models-3d/characters/cube.glb" },
+                { "type": "video", "title": "Robot in Action", "path": "assets/videos/robots/demo.mp4" },
+                { "type": "image", "title": "Photo 3", "path": "assets/images/robots/arm-preview.jpg" }
+            ]
+        }
+    ]
+}

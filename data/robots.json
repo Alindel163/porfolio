@@ -1,0 +1,17 @@
+{
+    "projects": [
+     {
+            "id": "robot_1",
+            "title": "Planetary gear reducer",
+            "description": "\nincreases the torque from the car lock motor.",
+            "category": "robots",
+            "previewImage": "assets/Robots/reductor/title.jpg",
+            "content": [
+                { "type": "3d", "title": "Assembly", "path": "assets/Robots/reductor/reductor.glb" },
+                { "type": "3d", "title": "Work", "path": "assets/Robots/reductor/reductor_work.glb" }
+            ]
+        }
+
+
+    ]
+}

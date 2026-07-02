@@ -1,0 +1,18 @@
+{
+    "projects": [
+     {
+            "id": "model_1",
+            "title": "Low poly zombie survive pack",
+            "description": "Character + some zombies. All character animations work for zombies, and vice versa.",
+            "category": "models",
+            "previewImage": "assets/Models/uCannotSurvive/title.jpg",
+            "content": [
+                { "type": "3d", "title": "Character", "path": "assets/Models/uCannotSurvive/char_anim.glb" },
+               { "type": "3d", "title": "Simple zombie", "path": "assets/Models/uCannotSurvive/zombie_anim.glb" },
+               { "type": "3d", "title": "Big zombie", "path": "assets/Models/uCannotSurvive/zombie_big_anim.glb" }
+            ]
+        }
+
+
+    ]
+}

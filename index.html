@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Portfolio | Robotics & GameDev</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Three.js for 3D viewer -->
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.128.0/build/three.module.js"
+            }
+        }
+    </script>
+</head>
+<body>
+<header>
+    <div class="header-slideshow">
+        <img src="assets/bg1.jpg" class="active">
+        <img src="assets/bg2.jpg">
+         <img src="assets/bg2.jpg">
+    </div>
+    <div class="container header-container">
+        <div class="header-photo">
+            <img src="assets/my-photo.jpg" alt="My photo">
+        </div>
+        <div class="header-text">
+            <h1>Portfolio</h1>
+            <p class="subtitle">Robotics · GameDev · 3D Modeling · Education</p>
+        </div>
+    </div>
+</header>
+
+    <!-- Filter bar -->
+  <nav class="filter-nav">
+    <div class="container">
+        <button class="filter-btn primary-group active" data-filter="all">All my projects</button>
+        <button class="filter-btn secondary-group" data-filter="robots">Robots</button>
+        <button class="filter-btn secondary-group" data-filter="models">3D Models</button>
+        <button class="filter-btn secondary-group" data-filter="games">Games</button>
+        <button class="filter-btn secondary-group" data-filter="programs">Programs</button>
+
+        <div class="filter-divider"></div>
+
+        <button class="filter-btn primary-group" data-filter="students">Students</button>
+        <button class="filter-btn primary-group" data-filter="more">More</button>
+    </div>
+</nav>
+
+    <!-- Projects grid -->
+    <main class="container">
+        <div id="projects-grid" class="projects-grid">
+            <!-- Cards will be inserted here by JavaScript -->
+            <div class="loading">Loading projects...</div>
+        </div>
+    </main>
+
+    <!-- Modal for 3D viewer and game iframe -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>

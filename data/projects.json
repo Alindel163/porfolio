@@ -1,0 +1,9 @@
+{
+    "include": [
+        "robots.json",
+        "models.json",
+        "games.json",
+        "students.json",
+        "more.json"
+    ]
+}

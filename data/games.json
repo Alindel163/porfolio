@@ -1,0 +1,16 @@
+{
+    "projects": [
+     {
+            "id": "game_1",
+            "title": "Zombie survive game - beta",
+            "description": "Gather food, defeat zombies. It’s a noble goal, after all...",
+            "category": "games",
+            "previewImage": "assets/Games/uCannotSurvive/title.jpg",
+            "content": [
+                { "type": "webgl", "title": "UCannotSurvive - beta", "path": "assets/Games/ucannotSurvive/index.html" }
+            ]
+        }
+
+
+    ]
+}
