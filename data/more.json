@@ -1,0 +1,137 @@
+{
+    "projects": [
+      {
+        "id": "other_1",
+        "title": "Volunteering",
+        "description": "For over 10 years, I have been volunteering to rescue fallen nestlings and injured birds, cooperating with official avian rehabilitation centers and state nature reserves.",
+        "category": "more",
+        "previewImage": "assets/Other/Birds/birds6.jpg",
+        "content": [
+          {
+            "type": "image",
+            "title": "Remus the rook. Fell out of the nest too early and became imprinted/tame during hand-rearing. Non-releasable.",
+            "path": "assets/Other/Birds/birds1.jpg"
+          },
+          {
+            "type": "image",
+            "title": "Hand-reared 40–60 swifts every summer, requiring 8–10 kg of insects.",
+            "images": [
+                "assets/Other/Birds/birds2.jpg",
+                "assets/Other/Birds/birds5.jpg"
+            ]
+        },
+           {
+            "type": "image",
+            "title": "Someone cut down a tree in a village, and I received the chicks along with their nest. I managed to raise them wild, and they flew away after successful reintroduction.",
+            "images": [
+                "assets/Other/Birds/birds3.jpg",
+                "assets/Other/Birds/birds4.jpg"
+            ]
+        },
+          {
+            "type": "image",
+            "title": "broke its leg and couldn't hunt. I stabilized its condition and transferred it to the Saratov Bird Rescue Center.",
+            "path": "assets/Other/Birds/birds6.jpg"
+          },
+           {
+            "type": "image",
+            "title": "Fell from their nest during railway maintenance works. They were raised and sent to a nature reserve.",
+            "path": "assets/Other/Birds/birds7.jpg"
+          },
+           {
+            "type": "image",
+            "title": "A Ural owl with a broken wing. I stabilized its condition and transferred it to the Saratov Bird Rescue Center.",
+            "path": "assets/Other/Birds/birds8.jpg"
+          },
+            {
+            "type": "image",
+            "title": "Abandoned by negligent owners; I give them home.",
+            "path": "assets/Other/Birds/birds9.jpg"
+          },
+            {
+            "type": "image",
+            "title": "A bat flew into an apartment during winter, disrupting its hibernation. Transferred to the Samara Bat Rehabilitation Center.",
+            "path": "assets/Other/Birds/birds10.jpg"
+          },
+            {
+            "type": "image",
+            "title": "Hit by a car, resulting in a shattered joint. Transferred to the Saratov Bird Rescue Center.",
+            "path": "assets/Other/Birds/birds11.jpg"
+          },
+          { "type": "video",
+            "title": "Releasing cured pigeons back to the wild",
+            "path": "assets/Other/Birds/pigeons.mp4" },
+           { "type": "video",
+            "title": "Releasing cured swifts back to the wild",
+            "path": "assets/Other/Birds/Swifts.mp4" }
+        ]
+      },
+         {
+            "id": "other_2",
+            "title": "Handmade guitar",
+            "description": "Made a guitar from scratch using plywood, wood, and a few metal components. Added bought tuning pegs and strings—and here’s the result!",
+            "category": "more",
+            "previewImage": "assets/Other/Guitar/Guitar (13).jpg",
+            "content": [
+                {
+            "type": "image",
+            "title": "Made a guitar from scratch using plywood, wood, and a few metal components. Added bought tuning pegs and strings—and here’s the result!",
+            "images": [
+                "assets/Other/Guitar/Guitar (1).jpg",
+                "assets/Other/Guitar/Guitar (2).jpg",
+               "assets/Other/Guitar/Guitar (3).jpg",
+                "assets/Other/Guitar/Guitar (4).jpg",
+               "assets/Other/Guitar/Guitar (5).jpg",
+                "assets/Other/Guitar/Guitar (6).jpg",
+               "assets/Other/Guitar/Guitar (7).jpg",
+                "assets/Other/Guitar/Guitar (8).jpg",
+               "assets/Other/Guitar/Guitar (9).jpg",
+                "assets/Other/Guitar/Guitar (10).jpg",
+                "assets/Other/Guitar/Guitar (11).jpg",
+               "assets/Other/Guitar/Guitar (12).jpg",
+                "assets/Other/Guitar/Guitar (13).jpg"
+            ]
+        }
+            ]
+     },
+      {
+        "id": "other_3",
+        "title": "my Pets",
+        "description": "I deeply love all kinds of animals, and whenever they come into my care, I do my best to create perfect conditions for them.",
+        "category": "more",
+        "previewImage": "assets/Other/MyPets/punCake.jpg",
+        "content": [
+          {
+            "type": "image",
+            "title": "Alexander is a bearded dragon. He loves eating all sorts of vegetables, but his absolute favorite thing is hunting cockroaches.",
+            "path": "assets/Other/MyPets/alexander.jpg"
+          },
+           {
+            "type": "image",
+            "title": "Albus is a leopard gecko. He’s a bit moody and really dislikes being handled, so everyone leaves him be.",
+            "path": "assets/Other/MyPets/Albus.jpg"
+          },
+            {
+            "type": "image",
+            "title": "Goliath is a crested gecko. He grew up to be massive, which is how he got his name.",
+            "path": "assets/Other/MyPets/Goliaf.jpg"
+          },
+           {
+            "type": "image",
+            "title": "Olga Vladimirovna is a local common toad. We rescued her from a basement, and she stayed with us for a while until she was well-fed and plump.",
+            "path": "assets/Other/MyPets/Olga.jpg"
+          },
+           {
+            "type": "image",
+            "title": "Charlie was rescued from the street, and he’s the smartest dog ever! He loves car rides and sleeping in total comfort, just like a human.",
+            "path": "assets/Other/MyPets/Charlie.jpg"
+          },
+           {
+            "type": "image",
+            "title": "Oladushka is a very 'liquid' cat. If you try to pick her up, she relaxes so much that she literally melts right out of your hands.",
+            "path": "assets/Other/MyPets/punCake.jpg"
+          }
+        ]
+      }
+      ]
+}

@@ -1,0 +1,36 @@
+{
+    "projects": [
+     {
+            "id": "game_1",
+            "title": "Zombie survive game - beta",
+            "description": "I developed this game for online platforms; here you can see an early version. Collect food and defeat zombies. It is a roguelike game.",
+            "category": "games",
+            "previewImage": "assets/Games/uCannotSurvive/title.jpg",
+            "content": [
+                { "type": "webgl", "title": "UCannotSurvive - beta", "path": "assets/Games/ucannotSurvive/index.html" }
+            ]
+        },
+       {
+            "id": "game_2",
+            "title": "Magic Tavern",
+            "description": "Video games only. I plan to completely remake this game, but it already features interesting combat mechanics and programming patterns.",
+            "category": "games",
+            "previewImage": "assets/Games/MagicTavern/magicTavern.jpg",
+            "content": [
+                { "type": "video", "title": "MagicTavern - video", "path": "assets/Games/MagicTavern/magicTavern.mp4" }
+            ]
+        },
+       {
+            "id": "game_3",
+            "title": "Crabs Empire",
+            "description": "Video games only. This is one of my old projects. I created a compiler for the Russian language based on C#.",
+            "category": "games",
+            "previewImage": "assets/Games/CrabsEmpire/CrabsEmpire.jpg",
+            "content": [
+                { "type": "video", "title": "MagicTavern - video", "path": "assets/Games/CrabsEmpire/CrabsEmpire.mp4" }
+            ]
+        }
+
+
+    ]
+}

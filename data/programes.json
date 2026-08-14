@@ -1,0 +1,120 @@
+{
+    "projects": [
+     {
+            "id": "program_1",
+            "title": "find_way_C++",
+            "description": "It can get boring while traveling, so I decided to build a pathfinding algorithm on my smartphone using Processing. All elements and algorithms are rendered via code. This version uses the breadth-first search algorithm.",
+            "category": "programs",
+            "previewImage": "assets/Programms/findWay/findWay.jpg",
+            "content": [
+                { "type": "video", "title": "Video", "path": "assets/Programms/findWay/find_way.mp4" }
+
+            ]
+        },
+      {
+            "id": "program_2",
+            "title": "Local storage for students",
+            "description": "A project developed for the university where I worked. It was designed for offline file sharing between students and classrooms. Students could upload files to a local cloud and work on their projects from almost any classroom.",
+            "category": "programs",
+            "previewImage": "assets/Programms/local_storage/storage_1.jpg",
+            "content": [
+                {
+            "type": "image",
+            "title": "Student dashboard",
+            "images": [
+                "assets/Programms/local_storage/storage_1.jpg",
+                "assets/Programms/local_storage/storage_2.jpg",
+                "assets/Programms/local_storage/storage_4.jpg"
+            ]
+        },
+                {
+            "type": "image",
+            "title": "Admin panel",
+            "images": [
+                "assets/Programms/local_storage/storage_3.jpg",
+                "assets/Programms/local_storage/storage_5.jpg",
+                "assets/Programms/local_storage/storage_6.jpg",
+              "assets/Programms/local_storage/storage_7.jpg"
+            ]
+        }
+
+            ]
+        },
+      {
+        "id": "program_3",
+        "title": "Local student certificate request system.",
+        "description": "Students can request certificates online, track the approval and signing process, and receive a remote notification once the document is ready for pickup. Administrators can manage certificate types. Features automatic generation of printable PDF files.",
+        "category": "programs",
+        "previewImage": "assets/Programms/student_certificate_requests/page_4.jpg",
+        "content": [
+          {
+            "type": "image",
+            "title": "Student dashboard",
+            "images": [
+              "assets/Programms/student_certificate_requests/page_1.jpg",
+              "assets/Programms/student_certificate_requests/page_2.jpg",
+              "assets/Programms/student_certificate_requests/page_3.jpg"
+            ]
+          },
+          {
+            "type": "image",
+            "title": "Secretary dashboard",
+            "images": [
+              "assets/Programms/student_certificate_requests/page_4.jpg",
+              "assets/Programms/student_certificate_requests/page_5.jpg",
+              "assets/Programms/student_certificate_requests/page_6.jpg",
+              "assets/Programms/student_certificate_requests/page_7.jpg"
+            ]
+          }
+          ]
+      },
+          {
+            "id": "program_4",
+            "title": "Video analytics system.",
+            "description": "A campus security project designed to enhance performance and log disciplinary infractions. Using MediaPipe, the system analyzes camera feeds; if aggression or smoking is detected, it alerts security personnel and saves frames of the violation to the database.",
+            "category": "programs",
+            "previewImage": "assets/Programms/Video_analisis/photo_1.jpg",
+            "content": [
+              {
+                "type": "image",
+                "title": "User interface",
+                "images": [
+                  "assets/Programms/Video_analisis/photo_1.jpg",
+                  "assets/Programms/Video_analisis/photo_2.jpg"
+                ]
+              },
+              {
+                "type": "image",
+                "title": "Saved screenshots of infractions",
+                "images": [
+                  "assets/Programms/Video_analisis/photo_3.jpg",
+                  "assets/Programms/Video_analisis/photo_4.jpg"
+                ]
+              }
+            ]
+          },
+       {
+            "id": "program_5",
+            "title": "Local sawmill website.",
+            "description": "An e-commerce platform where users can build a shopping cart and place orders. Features credit card number validation implemented with the Luhn algorithm.",
+            "category": "programs",
+            "previewImage": "assets/Programms/wood_shop/shop_1.png",
+            "content": [
+              {
+                "type": "image",
+                "title": "Local sawmill website.",
+                "images": [
+                  "assets/Programms/wood_shop/shop_1.png",
+                  "assets/Programms/wood_shop/shop_2.png",
+                   "assets/Programms/wood_shop/shop_3.png",
+                   "assets/Programms/wood_shop/shop_4.png",
+                   "assets/Programms/wood_shop/shop_5.png",
+                   "assets/Programms/wood_shop/shop_6.png"
+                ]
+              }
+            ]
+          }
+
+        ]
+
+}

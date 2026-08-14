@@ -1,0 +1,140 @@
+{
+    "projects": [
+     {
+            "id": "robot_1",
+            "title": "Planetary gear reducer",
+            "description": "I had planned to use the planetary gearbox for more powerful manipulator models. For now, a base unit has been created that transforms a standard electric motor into a functional robot joint.",
+            "category": "robots",
+            "previewImage": "assets/Robots/reductor/title.jpg",
+            "content": [
+                { "type": "3d", "title": "Assembly", "path": "assets/Robots/reductor/reductor.glb" },
+                { "type": "3d", "title": "Work", "path": "assets/Robots/reductor/reductor_work.glb" },
+               { "type": "video", "title": "How it work", "path": "assets/Robots/reductor/reductor.mp4" }
+            ]
+     },
+      {
+            "id": "robot_2",
+            "title": "Omnidirectional wheels",
+            "description": "The experiment to create omnidirectional wheels was a success. I was simply testing my skills to see if I could model, 3D print, and assemble an omnidirectional wheel.",
+            "category": "robots",
+            "previewImage": "assets/Robots/OmniWheels/omniWheel.jpg",
+            "content": [
+                { "type": "3d", "title": "wheel", "path": "assets/Robots/OmniWheels/omniWheel.glb" },
+                { "type": "video", "title": "How it work", "path": "assets/Robots/OmniWheels/omniWheel.mp4" },
+               { "type": "video", "title": "How it work", "path": "assets/Robots/OmniWheels/omniWheelsGripper.mp4" }
+            ]
+     },
+       {
+            "id": "robot_3",
+            "title": "Manipulator",
+            "description": "This robotic arm is built using very small N20 motors and an Arduino Nano controller. It receives commands via Bluetooth and can move objects between pre-programmed positions. It also features a color sensor for sorting items. The robot's gripper has been upgraded with sensor-equipped fingers to monitor gripping force and silicone pads to reduce slippage.",
+            "category": "robots",
+            "previewImage": "assets/Robots/Manipulator/manipulator.jpg",
+            "content": [
+                { "type": "3d", "title": "Base", "path": "assets/Robots/Manipulator/manipulator_base.glb" },
+                { "type": "3d", "title": "Hand", "path": "assets/Robots/Manipulator/manipulator_hand.glb" },
+                { "type": "3d", "title": "Gripper_head", "path": "assets/Robots/Manipulator/manipulator_gripper.glb" },
+                { "type": "3d", "title": "Finger", "path": "assets/Robots/Manipulator/manipulator_finger.glb" },
+                { "type": "3d", "title": "Form for silicone cover ", "path": "assets/Robots/Manipulator/manipulator_form.glb" },
+                { "type": "video", "title": "Work", "path": "assets/Robots/Manipulator/manipulator.mp4" }
+            ]
+     },
+      {
+            "id": "robot_4",
+            "title": "all_terrain_vehicle",
+            "description": "The all-terrain robot is equipped with an ESP32-based camera and features a specialized tread design for navigating significant obstacles. Initial tests revealed some weaknesses, yet the robot already demonstrates good off-road capability.",
+            "category": "robots",
+            "previewImage": "assets/Robots/all_terrain_vehicle/all_terrain_vehicle.jpg",
+            "content": [
+                { "type": "3d", "title": "main", "path": "assets/Robots/all_terrain_vehicle/FPV_car.glb" },
+                { "type": "3d", "title": "motor shell", "path": "assets/Robots/all_terrain_vehicle/FPV_motor.glb" },
+                { "type": "3d", "title": "wheel", "path": "assets/Robots/all_terrain_vehicle/FPV_wheel.glb" },
+                { "type": "video", "title": "Work", "path": "assets/Robots/all_terrain_vehicle/all_terrain_vehicle.mp4" },
+                { "type": "video", "title": "Assembly", "path": "assets/Robots/all_terrain_vehicle/all_terrain_vehicle_assembly.mp4" }
+            ]
+     },
+      {
+            "id": "robot_5",
+            "title": "Bender's head",
+            "description": "Bender's head was created for a school holiday event. Children entered binary code on a control panel—black button for zero, green for one—and the robot would output a corresponding letter. Ultimately, the teams had to use these letters to assemble robot-themed versions of sayings and proverbs.",
+            "category": "robots",
+            "previewImage": "assets/Robots/Bender/bender.jpg",
+            "content": [
+                { "type": "video", "title": "Work", "path": "assets/Robots/Bender/Bender.mp4" },
+                { "type": "image", "title": "Photo", "path": "assets/Robots/Bender/bender.jpg" }
+            ]
+     },
+       {
+            "id": "robot_6",
+            "title": "Wilson the bug",
+            "description": "The robot is controlled via Bluetooth and has only two motors, with all the legs moving thanks to a parasitic gear drive. The robot model itself is currently lost.",
+            "category": "robots",
+            "previewImage": "assets/Robots/Wilson/wilson.jpg",
+            "content": [
+                { "type": "video", "title": "Wilson", "path": "assets/Robots/Wilson/willson_bug.mp4" }
+
+            ]
+     },
+       {
+            "id": "robot_7",
+            "title": "My Lego Instructions",
+            "description": "While working at a children's robotics school, I frequently had to update curricula and modernize my teaching approach; consequently, I developed numerous models for LEGO sets. Here are some of them. All of them utilize motors and at least one sensor.",
+            "category": "robots",
+            "previewImage": "assets/Robots/MyLegoInstructions/Knight.jpg",
+            "content": [
+             {
+            "type": "image",
+            "title": "my Instructions",
+            "images": [
+                "assets/Robots/MyLegoInstructions/Ankilosaur.jpg",
+               "assets/Robots/MyLegoInstructions/ballista.jpg",
+               "assets/Robots/MyLegoInstructions/excavator.jpg",
+               "assets/Robots/MyLegoInstructions/footman.jpg",
+               "assets/Robots/MyLegoInstructions/helicopter.jpg",
+               "assets/Robots/MyLegoInstructions/Knight.jpg",
+               "assets/Robots/MyLegoInstructions/Pleseosaur.jpg",
+               "assets/Robots/MyLegoInstructions/ram.jpg",
+               "assets/Robots/MyLegoInstructions/rolloverCar.jpg",
+               "assets/Robots/MyLegoInstructions/Spinosaur.jpg",
+               "assets/Robots/MyLegoInstructions/tower.jpg",
+               "assets/Robots/MyLegoInstructions/turret.jpg",
+               "assets/Robots/MyLegoInstructions/walkerBot.jpg"
+            ]
+        }
+            ]
+     },
+       {
+            "id": "robot_8",
+            "title": "Simple robot hand for students",
+            "description": "A simple robotic manipulator for students. The design allows servomotors to rotate up to 180 degrees, protecting the motors from breaking and ensuring a safe programming experience for students.",
+            "category": "robots",
+            "previewImage": "assets/Robots/smallHand/smallHand.jpg",
+            "content": [
+                { "type": "3d", "title": "Model", "path": "assets/Robots/smallHand/smallHandModel.glb" },
+              { "type": "video", "title": "Assembly", "path": "assets/Robots/smallHand/smallHandAssembly.mkv"},
+                { "type": "video", "title": "Work", "path": "assets/Robots/smallHand/smallHand.mp4"}
+            ]
+     },
+       {
+            "id": "robot_9",
+            "title": "Quadropod",
+            "description": "A quadruped robot powered by servomotors. Model removed.",
+            "category": "robots",
+            "previewImage": "assets/Robots/Quadropod/Quadropod.jpg",
+            "content": [
+                { "type": "video", "title": "the walk", "path": "assets/Robots/Quadropod/quadropod.mp4"}
+            ]
+     },
+       {
+            "id": "robot_10",
+            "title": "Brooder for small birds",
+            "description": "Back when I was volunteering to rescue birds, I frequently took in chicks that couldn't survive without extra heat. So, I created these portable Arduino devices to control the precise temperature inside, making sure the nestlings stayed safe from both overheating and freezing.",
+            "category": "robots",
+            "previewImage": "assets/Robots/Brooder/brooder1.jpg",
+            "content": [
+               { "type": "image", "title": "Brooder", "path": "assets/Robots/Brooder/brooder1.jpg" },
+               { "type": "image", "title": "Brooder", "path": "assets/Robots/Brooder/brooder2.jpg" }
+            ]
+     }
+    ]
+}

@@ -1,0 +1,134 @@
+{
+    "projects": [
+
+      {
+    "id": "students_2",
+    "title": "Ilya's projects",
+    "description": "Ilya was eight years old when he started attending my center. Over the course of four years, he learned a great deal and worked on a wide variety of projects; photos of some of them have been preserved to this day. Now 12, Ilya has moved on to programming in Unity; we have already built a racing game and are currently creating a shooter.",
+    "category": "students",
+    "previewImage": "assets/Students/Ilyas_projects/Vostok (2).jpg",
+    "content": [
+        {
+            "type": "image",
+            "title": "Vostok rocket",
+            "images": [
+                "assets/Students/Ilyas_projects/Vostok (1).jpg",
+                "assets/Students/Ilyas_projects/Vostok (2).jpg",
+                "assets/Students/Ilyas_projects/Vostok (3).jpg",
+                "assets/Students/Ilyas_projects/Vostok (4).jpg",
+                "assets/Students/Ilyas_projects/Vostok (5).jpg",
+                "assets/Students/Ilyas_projects/Vostok (6).jpg",
+                "assets/Students/Ilyas_projects/Vostok (7).jpg",
+                "assets/Students/Ilyas_projects/Vostok (8).jpg",
+                "assets/Students/Ilyas_projects/Vostok (9).jpg",
+                "assets/Students/Ilyas_projects/Vostok (10).jpg"
+            ]
+        },
+         {
+            "type": "image",
+            "title": "moon_robot",
+            "images": [
+                "assets/Students/Ilyas_projects/moon_robot (1).jpg",
+                "assets/Students/Ilyas_projects/moon_robot (2).jpg",
+                "assets/Students/Ilyas_projects/moon_robot (3).jpg"
+            ]
+        },
+
+      { "type": "video", "title": "moon-bot video", "path": "assets/Students/Ilyas_projects/moon_robot.mp4" },
+
+         {
+            "type": "image",
+            "title": "RC_car",
+            "images": [
+                "assets/Students/Ilyas_projects/RC_car (1).jpg",
+                "assets/Students/Ilyas_projects/RC_car (2).jpg",
+                "assets/Students/Ilyas_projects/RC_car (3).jpg"
+            ]
+        },
+       { "type": "video", "title": "RC_car video", "path": "assets/Students/Ilyas_projects/IlyaRacer.mp4" }
+    ]
+},
+      {
+    "id": "students_3",
+    "title": "Yaroslav's projects",
+    "description": "Yaroslav was studying in the petroleum engineering department, but after attending a few of my classes, he decided to become a programmer. Initially, he developed numerous transportation models, but later moved on to creating complex games in Unity. His attention to detail always amazes me.",
+    "category": "students",
+    "previewImage": "assets/Students/Yaroslav_projects/Zis_5_1.jpg",
+    "content": [
+        {
+            "type": "image",
+            "title": "3D-printed ZiS-5 model",
+            "images": [
+                "assets/Students/Yaroslav_projects/Zis_5_1.jpg",
+                "assets/Students/Yaroslav_projects/Zis_5_2.jpg",
+                "assets/Students/Yaroslav_projects/Zis_5_3.jpg"
+            ]
+        },
+        { "type": "video", "title": "ZiS-5 in Unity", "path": "assets/Students/Yaroslav_projects/Zis_5_video.mp4" },
+          { "type": "image", "title": "printed tank models", "path": "assets/Students/Yaroslav_projects/tanks.jpg" }
+    ]
+},
+        {
+    "id": "students_4",
+    "title": "Nikita's projects",
+    "description": "Nikita attended the center for only a year, but during that time he managed to complete quite a few projects—the most memorable being a railway.",
+    "category": "students",
+    "previewImage": "assets/Students/Nikitas_projects/train.jpg",
+    "content": [
+        { "type": "video", "title": "Work", "path": "assets/Students/Nikitas_projects/train.mp4" },
+         { "type": "3d", "title": "main part with empty place for an engine and battaries", "path": "assets/Students/Nikitas_projects/train_main.glb" },
+       { "type": "3d", "title": "train", "path": "assets/Students/Nikitas_projects/train_vagon.glb" },
+       { "type": "3d", "title": "road of train", "path": "assets/Students/Nikitas_projects/train_relse.glb" }
+    ]
+},
+        {
+    "id": "students_5",
+    "title": "Battle bot for a holyday",
+    "description": "These models are designed for a holiday event; their purpose is to spark children's interest in building robots and learning about Arduino. Each robot is equipped with two buttons—\"shield\" and \"attack\"—and the player's goal is to strike at the right moment to knock the opponent down.",
+    "category": "students",
+    "previewImage": "assets/Students/battle_bots.jpg",
+    "content": [
+        { "type": "video", "title": "battle", "path": "assets/Students/Battle_bots.mp4" }
+
+    ]
+},
+        {
+    "id": "students_6",
+    "title": "Artem's projects",
+    "description": "These models are designed for a holiday event; their purpose is to spark children's interest in building robots and learning about Arduino. Each robot is equipped with two buttons—\"shield\" and \"attack\"—and the player's goal is to strike at the right moment to knock the opponent down.",
+    "category": "students",
+    "previewImage": "assets/Students/Artems_projects/woodenManipulator (6).jpg",
+    "content": [
+        { "type": "video", "title": "follow the line", "path": "assets/Students/Artems_projects/ArtemsLineBot.mp4" },
+        { "type": "video", "title": "tools transporting", "path": "assets/Students/Artems_projects/ArtemsWoddenBot.mp4" },
+       {
+            "type": "image",
+            "title": "Wooden manipulator",
+            "images": [
+                "assets/Students/Artems_projects/woodenManipulator (1).jpg",
+                "assets/Students/Artems_projects/woodenManipulator (2).jpg",
+                "assets/Students/Artems_projects/woodenManipulator (4).jpg",
+               "assets/Students/Artems_projects/woodenManipulator (5).jpg",
+                "assets/Students/Artems_projects/woodenManipulator (6).jpg",
+                "assets/Students/Artems_projects/woodenManipulator (9).jpg"
+            ]
+        }
+
+    ]
+},
+        {
+    "id": "students_6",
+    "title": "Liza's Project: Spaceship",
+    "description": "In this project, she aimed to implement the Meshchersky–Tsiolkovsky equation to calculate the delta-v (velocity increment) of a spacecraft or shuttle, taking fuel mass consumption into account.",
+    "category": "students",
+    "previewImage": "assets/Students/Lisa's rocket game/Lisa's rocket game.jpg",
+    "content": [
+        { "type": "video", "title": "Android verion of this game", "path": "assets/Students/Lisa's rocket game/Lisa's rocket game.mp4" }
+
+    ]
+}
+
+
+
+    ]
+}

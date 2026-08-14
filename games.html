@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Games</title>
+    <link rel="stylesheet" href="css/games.css">
+</head>
+<body>
+    <div class="app">
+        <!-- Левая панель -->
+        <nav class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <button class="toggle-btn" onclick="toggleSidebar()">☰</button>
+                <h2>🎮 Games</h2>
+            </div>
+            <div class="sidebar-content">
+                <div id="filter-container"></div>
+            </div>
+            <div class="sidebar-footer">
+                <a href="index.html">← Back to Portfolio</a>
+            </div>
+        </nav>
+
+        <!-- Основной контент -->
+        <main class="main-content">
+            <header class="games-header">
+                <h1>Student Games</h1>
+                <p>Web games made by my students</p>
+            </header>
+            <div id="games-grid" class="games-grid">
+                <div class="loading">Loading games...</div>
+            </div>
+        </main>
+    </div>
+
+    <script type="module" src="js/games.js"></script>
+</body>
+</html>

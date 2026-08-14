@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Portfolio | Robotics & GameDev</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Three.js for 3D viewer -->
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.128.0/build/three.module.js"
+            }
+        }
+    </script>
+
+</head>
+<body>
+<div id="google_translate_element" style="position: fixed; top: 10px; right: 10px; z-index: 999;"></div>
+
+<script type="text/javascript">
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({
+            pageLanguage: 'en',
+            includedLanguages: 'en,ru,fr,de,es,zh-CN,ja',
+            layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+        }, 'google_translate_element');
+    }
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+    <div class="app-layout">
+        <!-- Левая панель навигации -->
+        <nav class="nav-sidebar" id="navSidebar">
+            <div class="nav-sidebar-header">
+                <button class="toggle-btn" onclick="toggleNavSidebar()">☰</button>
+                <span class="nav-logo">Portfolio</span>
+            </div>
+            <div class="nav-sidebar-content">
+                <button class="nav-btn active" data-filter="about">👤 About Me</button>
+                <button class="nav-btn" data-filter="all">📂 All my Projects</button>
+                <button class="nav-btn secondary" data-filter="robots">🤖 Robots</button>
+               <!-- <button class="nav-btn secondary" data-filter="models">🎨 3D Models</button> -->
+                <button class="nav-btn secondary" data-filter="games">🎮 Games</button>
+                <button class="nav-btn secondary" data-filter="programs">💻 Programs</button>
+                <button class="nav-btn" data-filter="more">⭐ More</button>
+
+                <div class="nav-divider"></div>
+
+                <button class="nav-btn" data-filter="students">🎓 Students projects</button>
+                <div class="nav-divider"></div>
+                <a href="games.html" class="nav-btn">🎮 Student Games</a>
+            </div>
+        </nav>
+
+        <!-- Основной контент -->
+        <main class="main-content">
+            <header class="header-compact">
+                <div class="header-photo">
+                    <img src="assets/my-photo.jpg" alt="My photo">
+                </div>
+                <div class="header-text">
+                    <h1>Portfolio: Pavel Aleksandrov</h1>
+                    <p class="subtitle">Robotics · GameDev · 3D Modeling · Education</p>
+                </div>
+            </header>
+            <div id="projects-grid" class="projects-grid">
+                <div class="loading">Loading...</div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Модальное окно -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.128.0/build/three.module.js"
+            }
+        }
+    </script>
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
