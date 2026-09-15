@@ -15,8 +15,6 @@ export function init3DViewer(modelPath, container, showAnimations = true) {
 
     const renderer = new THREE.WebGLRenderer({ antialias: true });
     renderer.setSize(container.clientWidth, container.clientHeight);
-   //renderer.shadowMap.enabled = true;
-//renderer.shadowMap.type = THREE.PCFSoftShadowMap;
     container.appendChild(renderer.domElement);
 
     const controls = new OrbitControls(camera, renderer.domElement);
@@ -24,85 +22,87 @@ export function init3DViewer(modelPath, container, showAnimations = true) {
     controls.autoRotate = false;
     controls.target.set(0, 0, 0);
 
+    // Свет
+    const ambientLight = new THREE.AmbientLight(0x8090b0, 0.8);
+    scene.add(ambientLight);
 
-   // Свет (без теней)
-const ambientLight = new THREE.AmbientLight(0x8090b0, 0.8);
-scene.add(ambientLight);
+    const mainLight = new THREE.DirectionalLight(0xffffff, 1.5);
+    mainLight.position.set(2, 3, 2);
+    mainLight.castShadow = false;
+    scene.add(mainLight);
 
-const mainLight = new THREE.DirectionalLight(0xffffff, 1.5);
-mainLight.position.set(2, 3, 2);
-mainLight.castShadow = false;  // ← добавьте
-scene.add(mainLight);
+    const fillLight = new THREE.DirectionalLight(0x6688cc, 0.5);
+    fillLight.position.set(-2, 1, 1);
+    fillLight.castShadow = false;
+    scene.add(fillLight);
 
-const fillLight = new THREE.DirectionalLight(0x6688cc, 0.5);
-fillLight.position.set(-2, 1, 1);
-fillLight.castShadow = false;
-scene.add(fillLight);
+    const backLight = new THREE.DirectionalLight(0xffaa66, 0.3);
+    backLight.position.set(0, 1, -2);
+    scene.add(backLight);
 
-const backLight = new THREE.DirectionalLight(0xffaa66, 0.3);
-backLight.position.set(0, 1, -2);
-scene.add(backLight);
+    const rimLight = new THREE.DirectionalLight(0x88aaff, 0.3);
+    rimLight.position.set(-1, 1, -1.5);
+    scene.add(rimLight);
 
-const rimLight = new THREE.DirectionalLight(0x88aaff, 0.3);
-rimLight.position.set(-1, 1, -1.5);
-scene.add(rimLight);
-
-    //const gridHelper = new THREE.GridHelper(5, 20, 0x336699, 0x225588);
-    //gridHelper.position.y = -0.8;
-    //scene.add(gridHelper);
+    const gridHelper = new THREE.GridHelper(3, 6, 0x336699, 0x225588);
+    gridHelper.position.y = -0.8;
+    scene.add(gridHelper);
 
     let mixer = null;
     let animationActions = [];
-    let currentAnimationIndex = 0;
 
     const loader = new GLTFLoader();
 
     loader.load(modelPath, (gltf) => {
         const model = gltf.scene;
 
-         model.traverse((node) => { //отключение тени
-        if (node.isMesh) {
-            node.castShadow = false;
-            node.receiveShadow = false;
-        }
-    });
+        // Отключаем тени
+        model.traverse((node) => {
+            if (node.isMesh) {
+                node.castShadow = false;
+                node.receiveShadow = false;
+            }
+        });
+
+    const box = new THREE.Box3().setFromObject(model);
+const size = box.getSize(new THREE.Vector3());
+const maxDim = Math.max(size.x, size.y, size.z);
+const scale = 4 / maxDim;
+model.scale.set(scale, scale, scale);
+
+// Считаем позицию заново после масштабирования
+const box2 = new THREE.Box3().setFromObject(model);
+const center2 = box2.getCenter(new THREE.Vector3());
+model.position.x -= center2.x;
+model.position.y -= center2.y;
+model.position.z -= center2.z;
 
         scene.add(model);
 
-        const box = new THREE.Box3().setFromObject(model);
-        const center = box.getCenter(new THREE.Vector3());
-        const size = box.getSize(new THREE.Vector3());
-        const maxDim = Math.max(size.x, size.y, size.z);
-        const scale = 4 / maxDim;
-        model.scale.set(scale, scale, scale);
-        model.position.set(-center.x * scale, -center.y * scale, -center.z * scale);
+        // Анимации
+        if (gltf.animations && gltf.animations.length > 0) {
+            mixer = new THREE.AnimationMixer(model);
 
-       if (gltf.animations && gltf.animations.length > 0) {
-    mixer = new THREE.AnimationMixer(model);
+            gltf.animations.forEach((clip, index) => {
+                const action = mixer.clipAction(clip);
+                action.play();
+                animationActions.push({
+                    name: clip.name || `Animation ${index + 1}`,
+                    action: action,
+                    index: index
+                });
+            });
 
-    gltf.animations.forEach((clip, index) => {
-        const action = mixer.clipAction(clip);
-        action.play();
-        action.enabled = true;
-        animationActions.push({
-            name: clip.name || `Animation ${index + 1}`,
-            action: action,
-            index: index
-        });
-    });
+            animationActions.forEach((item, idx) => {
+                if (idx !== 0) {
+                    item.action.stop();
+                }
+            });
 
-    animationActions.forEach((item, idx) => {
-        if (idx !== 0) {
-            item.action.enabled = false;
-            item.action.stop();
+            if (showAnimations) {
+                addAnimationControls(container, animationActions);
+            }
         }
-    });
-
-    // ← Показываем панель ТОЛЬКО если showAnimations = true
-    if (showAnimations) {
-        addAnimationControls(container, animationActions);
-    }
-}
 
     }, undefined, (error) => {
         console.error('Model error:', error);
@@ -138,7 +138,7 @@ function addAnimationControls(container, animationActions) {
         position: absolute;
         bottom: 20px;
         left: 50%;
-        min-width: 300px;        
+        min-width: 800px;
         transform: translateX(-50%);
         background: rgba(10, 20, 40, 0.8);
         backdrop-filter: blur(8px);
@@ -173,10 +173,8 @@ function addAnimationControls(container, animationActions) {
         };
         btn.onclick = () => {
             animationActions.forEach(a => {
-                a.action.enabled = false;
                 a.action.stop();
             });
-            item.action.enabled = true;
             item.action.play();
             selectedIndex = idx;
 

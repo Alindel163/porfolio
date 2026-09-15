@@ -1,7 +1,7 @@
 {
     "include": [
         "robots.json",
-
+        "models.json",
         "games.json",
         "programes.json",
         "students.json",

@@ -1,7 +1,61 @@
 {
     "projects": [
+
      {
             "id": "model_1",
+            "title": "BattleToad (Trellis_2 + Fooocus + hand painting + Mixamo)",
+            "description": "Character for slasher game",
+            "category": "models",
+            "previewImage": "assets/Models/toad/toad.jpg",
+            "content": [
+                { "type": "3d", "title": "Sam", "path": "assets/Models/toad/toad_1.glb" }
+            ]
+        },
+       {
+            "id": "model_2",
+            "title": "Boris, from my game (Sculpting + Hand-keyed animation)",
+            "description": "Character for shooter",
+            "category": "models",
+            "previewImage": "assets/Models/Boris/boris.jpg",
+            "content": [
+                { "type": "3d", "title": "Boris", "path": "assets/Models/Boris/Boris.glb" }
+            ]
+        },
+       {
+            "id": "model_3",
+            "title": "raw project, Cat (Sculpting + Hand-keyed animation)",
+            "description": "Character for RPG",
+            "category": "models",
+            "previewImage": "assets/Models/Cat/cat.jpg",
+            "content": [
+                { "type": "3d", "title": "Character", "path": "assets/Models/Cat/cat.glb" }
+            ]
+        },
+        {
+            "id": "model_4",
+            "title": "Crab (Sculpting + Hand-keyed animation)",
+            "description": "Character for economy strategy",
+            "category": "models",
+            "previewImage": "assets/Models/Crab/crab.jpg",
+            "content": [
+                { "type": "3d", "title": "RainBow crab", "path": "assets/Models/Crab/Crab.glb" }
+            ]
+        },
+        {
+            "id": "model_5",
+            "title": "Characters from my game \"Fly-Fly never Cry\" (cube modelling + Hand-keyed animation)",
+            "description": "Character for a Flappy Bird-style game",
+            "category": "models",
+            "previewImage": "assets/Models/FlyFlyNeverCry/mouse.jpg",
+            "content": [
+                { "type": "3d", "title": "Mouse", "path": "assets/Models/FlyFlyNeverCry/mouse.glb" },
+              { "type": "3d", "title": "Frog", "path": "assets/Models/FlyFlyNeverCry/frog.glb" },
+              { "type": "3d", "title": "Pin", "path": "assets/Models/FlyFlyNeverCry/pin.glb" },
+               { "type": "3d", "title": "Fish", "path": "assets/Models/FlyFlyNeverCry/fish.glb" }
+            ]
+        },
+     {
+            "id": "model_6",
             "title": "Low poly zombie survive pack",
             "description": "Character + some zombies. All character animations work for zombies, and vice versa.",
             "category": "models",
