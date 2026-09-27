@@ -17,7 +17,16 @@
             "category": "games",
             "previewImage": "assets/Games/MagicTavern/magicTavern.jpg",
             "content": [
-                { "type": "video", "title": "MagicTavern - video", "path": "assets/Games/MagicTavern/magicTavern.mp4" }
+                { "type": "video", "title": "MagicTavern - video", "path": "assets/Games/MagicTavern/magicTavern.mp4" },
+              {
+            "type": "image",
+            "title": "parts of code",
+            "images": [
+                "assets/Games/MagicTavern/1.jpg",
+                "assets/Games/MagicTavern/2.jpg",
+               "assets/Games/MagicTavern/3.jpg"
+            ]
+        }
             ]
         },
        {
@@ -27,7 +36,17 @@
             "category": "games",
             "previewImage": "assets/Games/CrabsEmpire/CrabsEmpire.jpg",
             "content": [
-                { "type": "video", "title": "MagicTavern - video", "path": "assets/Games/CrabsEmpire/CrabsEmpire.mp4" }
+                { "type": "video", "title": "MagicTavern - video", "path": "assets/Games/CrabsEmpire/CrabsEmpire.mp4" },
+               {
+            "type": "image",
+            "title": "parts of code",
+            "images": [
+                "assets/Games/CrabsEmpire/1.jpg",
+                "assets/Games/CrabsEmpire/2.jpg",
+               "assets/Games/CrabsEmpire/3.jpg",
+               "assets/Games/CrabsEmpire/4.jpg"
+            ]
+        }
             ]
         }
 
