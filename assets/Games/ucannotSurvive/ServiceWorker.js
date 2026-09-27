@@ -1,9 +1,9 @@
-const cacheName = "Alindel-UCannotSurvive-0.1.0";
+const cacheName = "Alindel-UCannotSurvive-0.1";
 const contentToCache = [
-    "Build/webBuild.loader.js",
-    "Build/webBuild.framework.js.unityweb",
-    "Build/webBuild.data.unityweb",
-    "Build/webBuild.wasm.unityweb",
+    "Build/UCS.loader.js",
+    "Build/UCS.framework.js",
+    "Build/UCS.data",
+    "Build/UCS.wasm",
     "TemplateData/style.css"
 
 ];

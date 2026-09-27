@@ -5,9 +5,19 @@
             "title": "Zombie survive game - beta",
             "description": "I developed this game for online platforms; here you can see an early version. Collect food and defeat zombies. It is a roguelike game.",
             "category": "games",
-            "previewImage": "assets/Games/uCannotSurvive/title.jpg",
+            "previewImage": "assets/Games/ucannotSurvive/title.jpg",
             "content": [
-                { "type": "webgl", "title": "UCannotSurvive - beta", "path": "assets/Games/ucannotSurvive/index.html" }
+                { "type": "webgl", "title": "UCannotSurvive - beta", "path": "assets/Games/ucannotSurvive/index.html" },
+                 {
+            "type": "image",
+            "title": "parts of code",
+            "images": [
+                "assets/Games/ucannotSurvive/1.jpg",
+                "assets/Games/ucannotSurvive/2.jpg",
+               "assets/Games/ucannotSurvive/3.jpg",
+               "assets/Games/ucannotSurvive/4.jpg"
+            ]
+        }
             ]
         },
        {
