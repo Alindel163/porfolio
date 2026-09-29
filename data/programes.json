@@ -36,6 +36,16 @@
                 "assets/Programms/local_storage/storage_6.jpg",
               "assets/Programms/local_storage/storage_7.jpg"
             ]
+        },
+                {
+            "type": "image",
+            "title": "code",
+            "images": [
+                "assets/Programms/local_storage/1.jpg",
+                "assets/Programms/local_storage/2.jpg",
+                "assets/Programms/local_storage/3.jpg",
+              "assets/Programms/local_storage/4.jpg"
+            ]
         }
 
             ]
@@ -89,6 +99,15 @@
                 "images": [
                   "assets/Programms/Video_analisis/photo_3.jpg",
                   "assets/Programms/Video_analisis/photo_4.jpg"
+                ]
+              },
+              {
+                "type": "image",
+                "title": "code",
+                "images": [
+                  "assets/Programms/Video_analisis/1.jpg",
+                  "assets/Programms/Video_analisis/2.jpg",
+                  "assets/Programms/Video_analisis/3.jpg"
                 ]
               }
             ]
