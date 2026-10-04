@@ -58,6 +58,16 @@
             ]
         }
             ]
+        },
+      {
+            "id": "game_4",
+            "title": "Insect colony",
+            "description": "just test TCP client",
+            "category": "games",
+            "previewImage": "assets/Games/hive/1.jpg",
+            "content": [
+                { "type": "webgl", "title": "Hive - test", "path": "assets/Games/hive/index.html" }
+            ]
         }
 
 
