@@ -2,6 +2,47 @@
     "projects": [
      {
             "id": "game_1",
+            "title": "Insect colony",
+            "description": "Insect colony \"HIVE\" - Real-Time Resource Gathering Simulation (C# / .NET / WebSockets / Railway). Built from scratch using native C# WebSockets and a custom binary netcode protocol, replacing heavy JSON data streams to achieve ultra-low latency and minimal bandwidth (packets optimized down to 21-25 bytes). Features authoritarian server-side world generation with smart procedural resource clustering and real-time safe zone calculations. Fully containerized with Docker and deployed on cloud VPS infrastructure (Railway) supporting secure secure sockets (WSS) 24/7.",
+            "category": "games",
+            "previewImage": "assets/Games/hive/1.jpg",
+            "content": [
+               {
+    "type": "webgl",
+    "title": "Hive - web version game",
+    "path": "assets/Games/hive/index.html",
+    "newTab": true,
+    "description": "Multiplayer simulation with custom netcode. Use WSAD to move, \"Space\" to gather resources and return in home. Game will open in new tab",
+    "buttonText": "Play Hive"
+},
+              {
+    "type": "text-with-downloads",
+    "title": "Source Code",
+    "content": "Server GitHub Repository. A standalone, headless dedicated game server implemented as a lightweight C# .NET Core Console Application. It serves as the authoritative host for the game world, processing all state changes and player interactions. The architecture is engineered around the Fleck WebSocket library, driving a bespoke multi-threaded server loop that serializes and deserializes custom binary network streams. Instead of using standard game engine network wrappers, it implements direct byte-array manipulation to broadcast delta-compressed synchronization updates to connected clients in real time.",
+    "downloads": [
+        {
+            "name": "Available on GitHub:",
+            "path": "https://github.com/Alindel163/hiveServer",
+            "size": "External link"
+        }
+    ]
+},{
+    "type": "text-with-downloads",
+    "title": "Windows Client",
+    "content": "Real-Time Resource Gathering Simulation zip-archive",
+    "downloads": [
+        {
+            "name": "Windows Client (ZIP)",
+            "path": "assets/Games/hive/hiveBuild.zip",
+            "size": "38 MB"
+        }
+    ]
+}
+
+            ]
+        },
+      {
+            "id": "game_2",
             "title": "Zombie survive game - beta",
             "description": "I developed this game for online platforms; here you can see an early version. Collect food and defeat zombies. It is a roguelike game.",
             "category": "games",
@@ -21,7 +62,7 @@
             ]
         },
        {
-            "id": "game_2",
+            "id": "game_3",
             "title": "Magic Tavern",
             "description": "Video games only. I plan to completely remake this game, but it already features interesting combat mechanics and programming patterns.",
             "category": "games",
@@ -40,7 +81,7 @@
             ]
         },
        {
-            "id": "game_3",
+            "id": "game_4",
             "title": "Crabs Empire",
             "description": "Video games only. This is one of my old projects. I created a compiler for the Russian language based on C#.",
             "category": "games",
@@ -58,17 +99,8 @@
             ]
         }
             ]
-        },
-      {
-            "id": "game_4",
-            "title": "Insect colony",
-            "description": "just test TCP client",
-            "category": "games",
-            "previewImage": "assets/Games/hive/1.jpg",
-            "content": [
-                { "type": "webgl", "title": "Hive - test", "path": "assets/Games/hive/index.html" }
-            ]
         }
+
 
 
     ]

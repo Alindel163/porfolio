@@ -87,6 +87,7 @@ async function showFullDetails(project) {
 
     if (!project.content || !Array.isArray(project.content)) {
         showBasicDetails(project);
+        showBasicDetails(project);
         return;
     }
 
@@ -116,14 +117,16 @@ async function showFullDetails(project) {
             showAnimations: item.showAnimations !== undefined ? item.showAnimations : true
         });
     } else {
-        currentSlides.push({
-            type: item.type || 'text',
-            title: item.title || 'Untitled',
-            path: item.path || '',
-            content: item.content || '',
-            size: item.size || '',
-            images: item.images || []
-        });
+       currentSlides.push({
+        type: item.type || 'text',
+        title: item.title || 'Untitled',
+        path: item.path || '',
+        content: item.content || '',
+        size: item.size || '',
+        images: item.images || [],
+        newTab: item.newTab || false,
+        description: item.description || ''  // ← добавь
+    });
     }
 });
 
@@ -180,8 +183,17 @@ async function renderSlide() {
             break;
 
         case 'webgl':
-            slideHtml += `<iframe class="game-frame" src="${slide.path}" style="width: 100%; height: 100%; border: none; border-radius: 0px;"></iframe>`;
-            break;
+    if (slide.newTab) {
+        slideHtml += `
+            <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 400px; gap: 20px;">
+                <p style="color: #aabbdd;">${escapeHtml(slide.description || 'This game opens in a new window.')}</p>
+                <a href="${slide.path}" target="_blank" class="btn btn-primary" style="text-decoration: none; padding: 12px 32px;">Launch Game</a>
+            </div>
+        `;
+    } else {
+        slideHtml += `<iframe class="game-frame" src="${slide.path}" style="width: 100%; height: 100%; border: none; border-radius: 0px;"></iframe>`;
+    }
+    break;
 
         case 'image':
     if (slide.images && slide.images.length > 0) {
