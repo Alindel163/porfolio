@@ -40,6 +40,16 @@
     <h3 style="color: #88bbff; margin-top: 28px; margin-bottom: 12px;">Technical Projects (R&D &amp; Pet Projects)</h3>
 
     <div style="background: rgba(20,30,50,0.3); border-radius: 12px; padding: 16px 20px; margin-bottom: 16px; border-left: 3px solid #64b5f6;">
+    <strong style="color: #ffffff;">IoT Telemetry Ingestion &amp; Transactional Billing Engine</strong>
+    <span style="color: #6688aa; font-size: 0.85rem;"> — C# / .NET / Redis / PostgreSQL / Docker</span>
+    <ul style="margin: 8px 0 0 20px; padding-left: 8px;">
+        <li>Developed a high-throughput backend module architecture to process real-time telemetry packets from thousands of concurrent IoT tracking devices over WebSockets.</li>
+        <li>Architected a resilient ingestion pipeline utilizing bounded System.Threading.Channels to eliminate thread pool starvation and gracefully manage network backpressure.</li>
+        <li>Designed an anti-fraud sliding window rate-limiter leveraging Redis Sorted Sets (ZSET) alongside an automated batch processing ledger engine in PostgreSQL with strict ACID transactions and idempotency constraints.</li>
+    </ul>
+</div>
+
+    <div style="background: rgba(20,30,50,0.3); border-radius: 12px; padding: 16px 20px; margin-bottom: 16px; border-left: 3px solid #64b5f6;">
     <strong style="color: #ffffff;">Real-Time Resource Gathering Simulation</strong>
     <span style="color: #6688aa; font-size: 0.85rem;"> — C# / .NET / WebSockets / Railway</span>
     <ul style="margin: 8px 0 0 20px; padding-left: 8px;">

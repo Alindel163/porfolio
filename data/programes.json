@@ -2,6 +2,28 @@
     "projects": [
      {
             "id": "program_1",
+            "title": "IoT Telemetry Platform",
+            "description": "IoT Telemetry Ingestion & Transactional Billing Engine (C# / .NET / Redis / PostgreSQL / Docker). Built a highly scalable modular monolith from scratch to handle asynchronous data streaming and robust financial transaction processing. ",
+            "category": "programs",
+            "previewImage": "assets/Programms/IoT Telemetry Platform.jpg",
+            "content": [
+                {
+    "type": "text-with-downloads",
+    "title": "Source Code",
+    "content": "IoT Telemetry Ingestion & Transactional Billing Engine (C# / .NET / Redis / PostgreSQL / Docker). Built a highly scalable modular monolith from scratch to handle asynchronous data streaming and robust financial transaction processing. Features cryptographically signed payloads using HMAC-SHA256 to block Man-in-the-Middle (MitM) attacks and data tampering at the network gateway layer. Optimized persistent database write performance by implementing a highload batching engine via ConcurrentQueue and a background PeriodicTimer scheduler, reducing hard disk I/O stress by flushing bulk inserts to PostgreSQL every 5 seconds. Incorporates atomic Redis memory cache workflows to maintain single-source-of-truth account balances while enforcing strict database unique constraints on composite idempotency keys to ensure absolute protection against double-billing during automatic network retries.",
+    "downloads": [
+        {
+            "name": "Available on GitHub:",
+            "path": "https://github.com/Alindel163/iot-telemetry-billing-engine/tree/main",
+            "size": "External link"
+        }
+    ]
+}
+
+            ]
+        },
+      {
+            "id": "program_2",
             "title": "find_way_C++",
             "description": "It can get boring while traveling, so I decided to build a pathfinding algorithm on my smartphone using Processing. All elements and algorithms are rendered via code. This version uses the breadth-first search algorithm.",
             "category": "programs",
@@ -12,7 +34,7 @@
             ]
         },
       {
-            "id": "program_2",
+            "id": "program_3",
             "title": "Local storage for students",
             "description": "A project developed for the university where I worked. It was designed for offline file sharing between students and classrooms. Students could upload files to a local cloud and work on their projects from almost any classroom.",
             "category": "programs",
@@ -51,7 +73,7 @@
             ]
         },
       {
-        "id": "program_3",
+        "id": "program_4",
         "title": "Local student certificate request system.",
         "description": "Students can request certificates online, track the approval and signing process, and receive a remote notification once the document is ready for pickup. Administrators can manage certificate types. Features automatic generation of printable PDF files.",
         "category": "programs",
@@ -79,7 +101,7 @@
           ]
       },
           {
-            "id": "program_4",
+            "id": "program_5",
             "title": "Video analytics system.",
             "description": "A campus security project designed to enhance performance and log disciplinary infractions. Using MediaPipe, the system analyzes camera feeds; if aggression or smoking is detected, it alerts security personnel and saves frames of the violation to the database.",
             "category": "programs",
@@ -113,7 +135,7 @@
             ]
           },
        {
-            "id": "program_5",
+            "id": "program_6",
             "title": "Local sawmill website.",
             "description": "An e-commerce platform where users can build a shopping cart and place orders. Features credit card number validation implemented with the Luhn algorithm.",
             "category": "programs",
