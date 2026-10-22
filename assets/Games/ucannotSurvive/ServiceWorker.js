@@ -1,9 +1,9 @@
 const cacheName = "Alindel-UCannotSurvive-0.1";
 const contentToCache = [
     "Build/UCS.loader.js",
-    "Build/UCS.framework.js",
-    "Build/UCS.data",
-    "Build/UCS.wasm",
+    "Build/UCS.framework.js.br",
+    "Build/UCS.data.br",
+    "Build/UCS.wasm.br",
     "TemplateData/style.css"
 
 ];
