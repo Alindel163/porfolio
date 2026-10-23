@@ -48,7 +48,11 @@
             "category": "games",
             "previewImage": "assets/Games/ucannotSurvive/title.jpg",
             "content": [
-                { "type": "webgl", "title": "UCannotSurvive - beta", "path": "assets/Games/ucannotSurvive/index.html" },
+                { "type": "webgl", "title": "UCannotSurvive - beta", "path": "assets/Games/ucannotSurvive/index.html",
+                  "newTab": true,
+                 "description": "zombie arcada",
+                  "buttonText": "Play UCannotSurvive"
+                },
                  {
             "type": "image",
             "title": "parts of code",
