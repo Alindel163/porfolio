@@ -1,0 +1,38 @@
+{
+    "projects": [
+           {
+            "id": "featured_1",
+            "title": "Zombie survive game - beta",
+            "description": "I developed this game for online platforms; here you can see an early version. Collect food and defeat zombies. It is a roguelike game.",
+            "category": "featured",
+            "previewImage": "assets/Games/ucannotSurvive/title.jpg",
+            "content": [
+                { "type": "webgl", "title": "UCannotSurvive - beta", "path": "assets/Games/ucannotSurvive/index.html",
+                  "newTab": true,
+                 "description": "Fight for a righteous cause and rescue defenseless puppies from zombies—both the cunning ones and the not-so-cunning. Control your character using WASD, the arrow keys, or touch-like cursor inputs. Attacks are automated: targeting prioritizes zombies, meaning your character won't waste time breaking crates if enemies are nearby.",
+                  "buttonText": "Play UCannotSurvive"
+                },
+                 {
+            "type": "image",
+            "title": "The codebase has undergone a major overhaul: all characters, including both the player and the zombies, now inherit from a single base script. Unique zombie types inherit from the base zombie class, overriding specific functions. Heavy methods like distance or setDestination run on a timer to minimize CPU overhead. The KISS principle was applied in several places—since the player's current weapon inventory is limited, it is hardcoded into the player script; as variety expands, weapons will be refactored into Scriptable Objects (SO). Damage dealing is handled via an interface. Additionally, all characters share a single material with custom UV mapping layouts. The Enemy Manager spawns all units with staggered delays to prevent frame drops.",
+            "images": [
+                "assets/Games/ucannotSurvive/1.jpg",
+                "assets/Games/ucannotSurvive/2.jpg",
+               "assets/Games/ucannotSurvive/3.jpg",
+               "assets/Games/ucannotSurvive/4.jpg"
+            ]
+        }
+            ]
+        },
+      {
+            "id": "featured_2",
+            "title": "BattleToad (Trellis_2 + Fooocus + hand painting + Mixamo)",
+            "description": "Character for slasher game",
+            "category": "featured",
+            "previewImage": "assets/Models/toad/toad.jpg",
+            "content": [
+                { "type": "3d", "title": "Sam", "path": "assets/Models/toad/toad_1.glb" }
+            ]
+        }
+    ]
+}

@@ -24,7 +24,6 @@ async function loadProjects() {
         grid.innerHTML = `<div class="loading">Error: ${error.message}</div>`;
     }
 
-    showAboutMe();  // ← добавь здесь
 }
 
 function renderProjects(projects) {
@@ -86,7 +85,6 @@ async function showFullDetails(project) {
     currentSlideIndex = 0;
 
     if (!project.content || !Array.isArray(project.content)) {
-        showBasicDetails(project);
         showBasicDetails(project);
         return;
     }
@@ -343,19 +341,19 @@ function setupFilters() {
             btn.classList.add('active');
             const filter = btn.dataset.filter;
 
-            if (filter === 'about') {
-                showAboutMe();
-            } else if (filter === 'all') {
-                const filtered = allProjects.filter(p =>
-                    p.category === 'robots' ||
-                    p.category === 'models' ||
-                    p.category === 'games' ||
-                    p.category === 'programs'
-                );
-                renderProjects(filtered);
-            } else {
-                renderProjects(allProjects.filter(p => p.category === filter));
-            }
+            if (filter === 'featured') {
+    renderProjects(allProjects.filter(p => p.category === 'featured'));
+} else if (filter === 'all') {
+    const filtered = allProjects.filter(p =>
+        p.category === 'robots' ||
+        p.category === 'models' ||
+        p.category === 'games' ||
+        p.category === 'programs'
+    );
+    renderProjects(filtered);
+} else {
+    renderProjects(allProjects.filter(p => p.category === filter));
+}
         });
     });
 }
@@ -414,20 +412,6 @@ window.openFullImage = function(src) {
     document.body.appendChild(overlay);
 };
 
-document.addEventListener('DOMContentLoaded', () => {
-
-    loadProjects();
-    setupFilters();
-
-
-    const modal = document.getElementById('modal');
-    document.querySelector('.close-modal').addEventListener('click', () => modal.style.display = 'none');
-    window.addEventListener('click', (e) => {
-        if (e.target === modal) modal.style.display = 'none';
-    });
-});
-
-
 async function showAboutMe() {
     const grid = document.getElementById('projects-grid');
     try {
@@ -444,14 +428,14 @@ window.toggleNavSidebar = function() {
     sidebar.classList.toggle('collapsed');
 };
 
-document.addEventListener('DOMContentLoaded', () => {
-    showAboutMe();
-    loadProjects();
+document.addEventListener('DOMContentLoaded', async () => {
+    await loadProjects();
+    // Показываем только featured при загрузке
+    renderProjects(allProjects.filter(p => p.category === 'featured'));
     setupFilters();
 
     const modal = document.getElementById('modal');
 
-    // Закрытие по крестику
     document.querySelector('.close-modal').addEventListener('click', () => {
         const videos = modal.querySelectorAll('video');
         videos.forEach(video => {
@@ -461,7 +445,6 @@ document.addEventListener('DOMContentLoaded', () => {
         modal.style.display = 'none';
     });
 
-    // Закрытие по клику на фон
     window.addEventListener('click', (e) => {
         if (e.target === modal) {
             const videos = modal.querySelectorAll('video');

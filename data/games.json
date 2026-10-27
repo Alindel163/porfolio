@@ -50,12 +50,12 @@
             "content": [
                 { "type": "webgl", "title": "UCannotSurvive - beta", "path": "assets/Games/ucannotSurvive/index.html",
                   "newTab": true,
-                 "description": "zombie arcada",
+                 "description": "Fight for a righteous cause and rescue defenseless puppies from zombies—both the cunning ones and the not-so-cunning. Control your character using WASD, the arrow keys, or touch-like cursor inputs. Attacks are automated: targeting prioritizes zombies, meaning your character won't waste time breaking crates if enemies are nearby.",
                   "buttonText": "Play UCannotSurvive"
                 },
                  {
             "type": "image",
-            "title": "parts of code",
+            "title": "The codebase has undergone a major overhaul: all characters, including both the player and the zombies, now inherit from a single base script. Unique zombie types inherit from the base zombie class, overriding specific functions. Heavy methods like distance or setDestination run on a timer to minimize CPU overhead. The KISS principle was applied in several places—since the player's current weapon inventory is limited, it is hardcoded into the player script; as variety expands, weapons will be refactored into Scriptable Objects (SO). Damage dealing is handled via an interface. Additionally, all characters share a single material with custom UV mapping layouts. The Enemy Manager spawns all units with staggered delays to prevent frame drops.",
             "images": [
                 "assets/Games/ucannotSurvive/1.jpg",
                 "assets/Games/ucannotSurvive/2.jpg",
