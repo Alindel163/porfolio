@@ -24,8 +24,24 @@
         }
             ]
         },
+
       {
             "id": "featured_2",
+            "title": "Bacterias, puzzle game - beta",
+            "description": "Solve simple puzzles to guide a colony of bacteria out of the test container. Use WASD to move the star, and the bacteria will follow it.",
+            "category": "featured",
+            "previewImage": "assets/Games/bacterias/bacs.jpg",
+            "content": [
+                { "type": "webgl", "title": "Bacterias - beta", "path": "assets/Games/bacterias/index.html",
+                  "newTab": true,
+                 "description": "Solve simple puzzles to guide a colony of bacteria out of the test container. Use WASD to move the star, and the bacteria will follow it.",
+                  "buttonText": "Play Bacterias"
+                }
+            ]
+        },
+
+      {
+            "id": "featured_3",
             "title": "BattleToad (Trellis_2 + Fooocus + hand painting + Mixamo)",
             "description": "Character for slasher game",
             "category": "featured",
